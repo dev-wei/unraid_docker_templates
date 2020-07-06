@@ -48,7 +48,7 @@
             <Mode>rw</Mode>
         </Volume>
     </Data>
-    <WebUI>http://[IP]:[PORT:8890]/</WebUI>
+    <WebUI>http://[IP]:[PORT:9000]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
     <ExtraParams>-m 8g --runtime=nvidia --user root</ExtraParams>
 </Containers>
