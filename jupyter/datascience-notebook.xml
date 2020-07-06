@@ -26,36 +26,38 @@
     </Networking>
     <Environment>
         <Variable>
-            <Name>UMASK</Name>
-            <Value>000</Value>
+            <Name>AWS_ACCESS_KEY_ID</Name>
+            <Value>xxx</Value>
         </Variable>
         <Variable>
-            <Name>PUID</Name>
-            <Value>99</Value>
+            <Name>AWS_SECRET_ACCESS_KEY</Name>
+            <Value>xxx</Value>
         </Variable>
         <Variable>
-            <Name>PGID</Name>
-            <Value>100</Value>
+            <Name>JUPYTER_ENABLE_LAB</Name>
+            <Value>yes</Value>
+        </Variable>
+        <Variable>
+            <Name>GRANT_SUDO</Name>
+            <Value>yes</Value>
+        </Variable>
+        <Variable>
+            <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
+            <Value>all</Value>
+        </Variable>
+        <Variable>
+            <Name>NVIDIA_VISIBLE_DEVICES</Name>
+            <Value>xxx</Value>
         </Variable>
     </Environment>
     <Data>
-<!--        <Volume>-->
-<!--            <HostDir>/mnt/cache/appdata/config</HostDir>-->
-<!--            <ContainerDir>/config</ContainerDir>-->
-<!--            <Mode>rw</Mode>-->
-<!--        </Volume>-->
-<!--        <Volume>-->
-<!--            <HostDir>/mnt/user/appdata/data</HostDir>-->
-<!--            <ContainerDir>/data</ContainerDir>-->
-<!--            <Mode>rw</Mode>-->
-<!--        </Volume>-->
-<!--        <Volume>-->
-<!--            <HostDir>/mnt/user</HostDir>-->
-<!--            <ContainerDir>/media</ContainerDir>-->
-<!--            <Mode>rw</Mode>-->
-<!--        </Volume>-->
+        <Volume>
+            <HostDir>/mnt/user/Code/</HostDir>
+            <ContainerDir>/home/jovyan</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
     </Data>
     <WebUI>http://[IP]:[PORT:8890]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
-    <ExtraParams>--runtime=nvidia</ExtraParams>
+    <ExtraParams>--runtime=nvidia --user root</ExtraParams>
 </Containers>
