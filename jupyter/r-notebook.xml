@@ -44,7 +44,7 @@
     <Data>
         <Volume>
             <HostDir>/mnt/user/Code/</HostDir>
-            <ContainerDir>/home/jovyan</ContainerDir>
+            <ContainerDir>/home/jovyan/code</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
