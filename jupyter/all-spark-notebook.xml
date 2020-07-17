@@ -47,6 +47,11 @@
             <ContainerDir>/home/jovyan/work</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
+        <Volume>
+            <HostDir>/mnt/user/Code/.jupyter</HostDir>
+            <ContainerDir>/home/jovyan/.jupyter</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
     </Data>
     <WebUI>http://[IP]:[PORT:9001]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
