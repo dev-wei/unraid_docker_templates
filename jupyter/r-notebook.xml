@@ -52,6 +52,11 @@
             <ContainerDir>/home/jovyan/.jupyter</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
+        <Volume>
+            <HostDir>/mnt/user/appdata/datascience-notebook</HostDir>
+            <ContainerDir>/home/jovyan/.local</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
     </Data>
     <WebUI>http://[IP]:[PORT:9003]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
