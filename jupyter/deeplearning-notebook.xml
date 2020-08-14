@@ -43,16 +43,6 @@
     </Environment>
     <Data>
         <Volume>
-            <HostDir>/mnt/user/Code/</HostDir>
-            <ContainerDir>/home/jovyan/work</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-        <Volume>
-            <HostDir>/mnt/user/Code/.jupyter</HostDir>
-            <ContainerDir>/home/jovyan/.jupyter</ContainerDir>
-            <Mode>rw</Mode>
-        </Volume>
-        <Volume>
             <HostDir>/mnt/user/appdata/deeplearning-notebook</HostDir>
             <ContainerDir>/home/jovyan/.local</ContainerDir>
             <Mode>rw</Mode>
@@ -60,5 +50,5 @@
     </Data>
     <WebUI>http://[IP]:[PORT:9002]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
-    <ExtraParams>-m 8g --runtime=nvidia --user root</ExtraParams>
+    <ExtraParams>-m 8g --gpus all --user root</ExtraParams>
 </Containers>

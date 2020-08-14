@@ -32,14 +32,6 @@
             <Name>GRANT_SUDO</Name>
             <Value>yes</Value>
         </Variable>
-        <Variable>
-            <Name>NVIDIA_DRIVER_CAPABILITIES</Name>
-            <Value>all</Value>
-        </Variable>
-        <Variable>
-            <Name>NVIDIA_VISIBLE_DEVICES</Name>
-            <Value>GPU-fce3d3cf-3757-b152-3bf0-c00efbc9764c</Value>
-        </Variable>
     </Environment>
     <Data>
         <Volume>
@@ -60,5 +52,5 @@
     </Data>
     <WebUI>http://[IP]:[PORT:9003]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
-    <ExtraParams>-m 8g --runtime=nvidia --user root</ExtraParams>
+    <ExtraParams>-m 8g --gpus all --user root</ExtraParams>
 </Containers>

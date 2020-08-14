@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-    <TemplateURL>https://raw.githubusercontent.com/dev-wei/unraid_docker_templates/master/jupyter/datascience-notebook.xml</TemplateURL>
+    <TemplateURL>https://raw.githubusercontent.com/dev-wei/unraid_docker_templates/master/jupyter/deeplearning-gpu-notebook.xml</TemplateURL>
     <Beta>False</Beta>
-    <Name>datascience-notebook</Name>
+    <Name>deeplearning-gpu-notebook</Name>
     <Overview>
-        This is a folk of the jupyter datascience-notebook
+        This is a folk of the jupyter deeplearning-gpu-notebook
     </Overview>
     <Support>dev.wei@gmail.com</Support>
     <Registry>https://registry.hub.docker.com/r/michaelwei/jupyter/</Registry>
     <GitHub>https://github.com/dev-wei/unraid_docker_templates</GitHub>
-    <Repository>michaelwei/jupyter:datascience-notebook</Repository>
+    <Repository>michaelwei/jupyter:deeplearning--gpu-notebook</Repository>
     <Project>https://github.com/dev-wei/unraid_docker_templates</Project>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
@@ -17,7 +17,7 @@
         <Mode>bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>9000</HostPort>
+                <HostPort>9003</HostPort>
                 <ContainerPort>8888</ContainerPort>
                 <Protocol>tcp</Protocol>
             </Port>
@@ -45,12 +45,12 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir>/mnt/user/appdata/datascience-notebook</HostDir>
+            <HostDir>/mnt/user/appdata/deeplearning-gpu-notebook</HostDir>
             <ContainerDir>/home/jovyan/.local</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
-    <WebUI>http://[IP]:[PORT:9000]/</WebUI>
+    <WebUI>http://[IP]:[PORT:9003]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
     <ExtraParams>-m 8g --gpus all --user root</ExtraParams>
 </Containers>
