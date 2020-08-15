@@ -9,7 +9,7 @@
     <Support>dev.wei@gmail.com</Support>
     <Registry>https://registry.hub.docker.com/r/michaelwei/jupyter/</Registry>
     <GitHub>https://github.com/dev-wei/unraid_docker_templates</GitHub>
-    <Repository>michaelwei/jupyter:deeplearning--gpu-notebook</Repository>
+    <Repository>michaelwei/jupyter:deeplearning-gpu-notebook</Repository>
     <Project>https://github.com/dev-wei/unraid_docker_templates</Project>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
