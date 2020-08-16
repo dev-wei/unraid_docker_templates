@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-    <TemplateURL>https://raw.githubusercontent.com/dev-wei/unraid_docker_templates/master/jupyter/deeplearning-gpu-notebook.xml</TemplateURL>
+    <TemplateURL>https://raw.githubusercontent.com/dev-wei/unraid_docker_templates/master/jupyter/gpu-deeplearning-notebook.xml</TemplateURL>
     <Beta>False</Beta>
-    <Name>deeplearning-gpu-notebook</Name>
+    <Name>gpu-deeplearning-notebook</Name>
     <Overview>
-        This is a folk of the jupyter deeplearning-gpu-notebook
+        This is a folk of the jupyter gpu-deeplearning-notebook
     </Overview>
     <Support>dev.wei@gmail.com</Support>
     <Registry>https://registry.hub.docker.com/r/michaelwei/jupyter/</Registry>
     <GitHub>https://github.com/dev-wei/unraid_docker_templates</GitHub>
-    <Repository>michaelwei/jupyter:deeplearning-gpu-notebook</Repository>
+    <Repository>michaelwei/jupyter:gpu-deeplearning-notebook</Repository>
     <Project>https://github.com/dev-wei/unraid_docker_templates</Project>
     <BindTime>true</BindTime>
     <Privileged>false</Privileged>
@@ -45,7 +45,7 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
-            <HostDir>/mnt/user/appdata/deeplearning-gpu-notebook</HostDir>
+            <HostDir>/mnt/user/appdata/gpu-deeplearning-notebook</HostDir>
             <ContainerDir>/home/jovyan/.local</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
