@@ -52,5 +52,5 @@
     </Data>
     <WebUI>http://[IP]:[PORT:9003]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
-    <ExtraParams>-m 8g --gpus all --user root</ExtraParams>
+    <ExtraParams>-m 8g --user root</ExtraParams>
 </Containers>

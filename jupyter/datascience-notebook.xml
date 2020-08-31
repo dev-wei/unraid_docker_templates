@@ -45,6 +45,16 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
+            <HostDir>/mnt/user/Code/gensim-data</HostDir>
+            <ContainerDir>/home/jovyan/gensim-data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/Code/nltk_data</HostDir>
+            <ContainerDir>/home/jovyan/nltk_data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
             <HostDir>/mnt/user/appdata/datascience-notebook</HostDir>
             <ContainerDir>/home/jovyan/.local</ContainerDir>
             <Mode>rw</Mode>
@@ -52,5 +62,5 @@
     </Data>
     <WebUI>http://[IP]:[PORT:9000]/</WebUI>
     <Icon>https://avatars1.githubusercontent.com/u/5780349</Icon>
-    <ExtraParams>-m 8g --gpus all --user root</ExtraParams>
+    <ExtraParams>-m 8g --user root</ExtraParams>
 </Containers>

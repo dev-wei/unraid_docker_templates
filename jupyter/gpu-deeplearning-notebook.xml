@@ -45,6 +45,16 @@
             <Mode>rw</Mode>
         </Volume>
         <Volume>
+            <HostDir>/mnt/user/Code/gensim-data</HostDir>
+            <ContainerDir>/home/jovyan/gensim-data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir>/mnt/user/Code/nltk_data</HostDir>
+            <ContainerDir>/home/jovyan/nltk_data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
             <HostDir>/mnt/user/appdata/gpu-deeplearning-notebook</HostDir>
             <ContainerDir>/home/jovyan/.local</ContainerDir>
             <Mode>rw</Mode>
